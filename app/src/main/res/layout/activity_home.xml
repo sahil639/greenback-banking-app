@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".HomeActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/_5sdp"
+        android:layout_marginBottom="@dimen/_25sdp"
+        android:clickable="false"
+        android:fontFamily="@font/montserrat"
+        android:text="Welcome to"
+        android:textAlignment="center"
+        android:textColor="#292929"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:typeface="monospace" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/_25sdp"
+        android:clickable="false"
+        android:fontFamily="@font/montserrat"
+        android:padding="0dp"
+        android:text="Greenback Banking"
+        android:textAlignment="center"
+        android:textColor="#8BC34A"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        android:typeface="monospace" />
+
+    <Button
+        android:id="@+id/button_main"
+        android:layout_width="158dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:backgroundTint="@color/green"
+        android:elevation="12dp"
+        android:fontFamily="@font/montserrat"
+        android:lineSpacingExtra="24sp"
+        android:text="START"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="306dp"
+        android:layout_gravity=""
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="0dp"
+
+        app:srcCompat="@drawable/homepageillust" />
+
+</LinearLayout>

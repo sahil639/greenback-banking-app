@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FCF6F5F5"
+    android:foregroundTint="#FFFFFF"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".TransactionSuccessFull">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:textStyle="bold"
+        android:text="TRANSACTION SUCCESSFUL"
+        android:textAlignment="center"
+        android:textColor="#50A0D6"
+        android:typeface="monospace"
+        android:textSize="25dp"
+         />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="@dimen/_150sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:id="@+id/imageView"
+        app:lottie_rawRes="@raw/successfinal"
+        app:lottie_autoPlay="true">
+
+    </com.airbnb.lottie.LottieAnimationView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:clickable="false"
+        android:textStyle="bold"
+        android:text="THANK YOU"
+        android:textAlignment="center"
+        android:textColor="#D3A4A4"
+        android:typeface="monospace"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <Button
+        android:id="@+id/button_back_to_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/button_background_color"
+        android:text="RETURN"
+        android:textAlignment="center"
+        android:textColor="@color/button_text_color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="341dp" />
+
+
+</LinearLayout>

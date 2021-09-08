@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TransactionHistory">
+
+    <TextView
+        android:id="@+id/txt_history"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_13sdp"
+        android:gravity="center"
+        android:padding="1dp"
+        android:text="Recent Transaction"
+        android:textAllCaps="true"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#11209F"
+        android:textStyle="bold"
+        android:typeface="normal" />
+
+
+<androidx.recyclerview.widget.RecyclerView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/txt_history"
+    android:layoutAnimation="@anim/layout_animation"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:id="@+id/history_recycler"
+    android:padding="10dp"
+   />
+    <TextView
+        android:id="@+id/empty_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_history"
+        android:text="No history"
+        android:textColor="#000"
+        android:textSize="15dp"
+        android:visibility="invisible">
+    </TextView>
+</RelativeLayout>

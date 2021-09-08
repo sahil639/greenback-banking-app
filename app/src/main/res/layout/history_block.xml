@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        card_view:cardUseCompatPadding="true"
+        app:cardCornerRadius="8dp"
+        card_view:cardElevation="6dp"
+        android:layout_margin="8dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:padding="8dp"
+            android:layout_height="match_parent">
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="SENDER'S NAME    : "
+               android:textStyle="bold"
+               android:typeface="monospace"
+               android:padding="1dp"
+               android:id="@+id/lll"
+               />
+            <TextView
+                android:id="@+id/Transaction_history_name"
+                android:layout_width="wrap_content"
+                android:padding="1dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/lll"
+                android:layout_weight="1"
+                android:text="Sender's Name"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="1dp"
+                android:text="RECEIVER'S NAME : "
+                android:typeface="monospace"
+                android:layout_below="@+id/lll"
+                android:textStyle="bold"
+                android:id="@+id/rrr"
+                />
+            <TextView
+                android:id="@+id/Transaction_history_name_receiver"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="1dp"
+                android:layout_below="@+id/Transaction_history_name"
+                android:layout_toRightOf="@+id/rrr"
+                android:layout_weight="1"
+                android:text="Receiver's Name" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:typeface="monospace"
+                android:padding="1dp"
+                android:id="@+id/ssss"
+                android:text="TRANSFER AMOUNT: "
+                android:layout_below="@id/rrr"
+                ></TextView>
+            <TextView
+                android:id="@+id/Amount_Number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00000"
+                android:padding="1dp"
+                android:layout_below="@+id/rrr"
+                android:layout_toRightOf="@+id/ssss"
+                android:layout_weight="1"
+                android:inputType="number"
+                android:clickable="false"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/yyyy"
+                android:padding="1dp"
+                android:typeface="monospace"
+                android:text="STATUS : "
+                android:textStyle="bold"
+                android:layout_below="@id/ssss"></TextView>
+            <TextView
+                android:id="@+id/transaction_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="1dp"
+                android:layout_weight="1"
+                android:text="Transaction_Status"
+                android:layout_below="@id/ssss"
+                android:layout_toRightOf="@id/yyyy"
+                android:textColor="#00FF0A"
+                android:typeface="monospace" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

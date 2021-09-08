@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:layout_marginTop="3dp"
+    android:layout_marginBottom="3dp"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    android:padding="10dp"
+    card_view:cardBackgroundColor="#FFFFFF"
+    card_view:cardCornerRadius="18dp"
+    card_view:cardElevation="12dp"
+    card_view:cardUseCompatPadding="false"
+    card_view:contentPadding="3dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/tttp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:fontFamily="@font/montserrat"
+            android:padding="1dp"
+            android:text="NAME  : "
+            android:textStyle="bold"></TextView>
+
+        <TextView
+            android:id="@+id/txtTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_toRightOf="@+id/tttp"
+            android:layout_weight="1"
+            android:fontFamily="@font/montserrat"
+            android:padding="1dp"
+            android:text="Name"></TextView>
+
+        <TextView
+            android:id="@+id/pppp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tttp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:fontFamily="@font/montserrat"
+            android:padding="1dp"
+            android:text="EMAIL ID : "
+            android:textStyle="bold"></TextView>
+
+        <TextView
+            android:id="@+id/email_sender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtTitle"
+            android:layout_gravity="center"
+            android:layout_toRightOf="@+id/pppp"
+            android:layout_weight="1"
+            android:fontFamily="@font/montserrat"
+            android:inputType="textEmailAddress"
+            android:padding="1dp"
+            android:text="Email ID"></TextView>
+
+        <TextView
+            android:id="@+id/bbbb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pppp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:fontFamily="@font/montserrat"
+            android:padding="1dp"
+            android:text="BALANCE : "
+            android:textStyle="bold"></TextView>
+
+        <TextView
+            android:id="@+id/balance_sender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/email_sender"
+            android:layout_gravity="center"
+            android:layout_toRightOf="@+id/bbbb"
+            android:layout_weight="1"
+            android:fontFamily="@font/montserrat"
+            android:inputType="number"
+            android:padding="1dp"
+            android:text="0000"
+            android:textColor="#0C7BB6"
+            android:typeface="monospace"></TextView>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

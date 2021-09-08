@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp"
+    android:orientation="vertical"
+    card_view:cardUseCompatPadding="true"
+    android:background="#7A7C7C"
+    card_view:cardBackgroundColor="#EDECEC"
+    card_view:cardCornerRadius="8dp"
+    card_view:cardElevation="6dp"
+    card_view:contentPadding="6dp"
+    android:layout_margin="8dp"
+
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="8dp"
+        >
+
+        <TextView
+            android:id="@+id/fffff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NAME        : "
+            android:padding="1dp"
+            android:textStyle="bold"></TextView>
+
+        <TextView
+            android:id="@+id/txt_Reciever_Title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/fffff"
+            android:padding="1dp"
+            android:layout_weight="1"
+            android:text="Reciever_Name"></TextView>
+
+        <TextView
+            android:id="@+id/emmmmm"
+            android:layout_width="wrap_content"
+            android:padding="1dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fffff"
+            android:text="EMAIL ID   : "
+            android:textStyle="bold">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/receiver_email_id"
+            android:layout_width="match_parent"
+            android:padding="1dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fffff"
+            android:layout_toRightOf="@id/emmmmm"
+            android:layout_weight="1"
+            android:inputType="textEmailAddress"
+            android:text="Email_id" />
+
+        <TextView
+            android:id="@+id/rwwwww"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/emmmmm"
+            android:padding="1dp"
+            android:text="BALANCE  : "
+            android:textStyle="bold">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/receiver_balance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:typeface="monospace"
+            android:padding="1dp"
+            android:layout_below="@+id/receiver_email_id"
+            android:layout_toRightOf="@+id/rwwwww"
+            android:inputType="number"
+            android:text="Balance"
+            android:textColor="#048AD3"
+             />
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
