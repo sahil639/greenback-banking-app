@@ -27,32 +27,35 @@
 
         <TextView
             android:id="@+id/name_textView"
-            android:layout_marginLeft="@dimen/_50sdp"
             android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="45dp"
+            android:layout_marginRight="45dp"
             android:layout_weight="1"
-            android:drawableLeft="@drawable/ic_baseline_person_outline_24"
-            android:layout_height="wrap_content"
-            android:textAlignment="center"
+            android:drawableLeft="@drawable/ic_round_account_circle_24"
+            android:fontFamily="@font/montserrat"
             android:text="TextView"
-             />
+            android:textAlignment="center" />
     </LinearLayout>
 
     <LinearLayout
-        android:layout_marginTop="20dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
         android:orientation="horizontal">
 
         <TextView
             android:id="@+id/email_textView"
             android:layout_width="match_parent"
-            android:layout_weight="1"
             android:layout_height="wrap_content"
-            android:drawableLeft="@drawable/ic_baseline_alternate_email_24"
             android:layout_gravity="center"
-            android:textAlignment="center"
+            android:layout_marginLeft="45dp"
+            android:layout_marginRight="45dp"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/ic_baseline_email_24"
+            android:fontFamily="@font/montserrat"
             android:text="TextView"
-            android:layout_marginLeft="@dimen/_50sdp"
+            android:textAlignment="center"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.461"
             app:layout_constraintStart_toStartOf="parent"
@@ -68,18 +71,20 @@
 
 
         <TextView
-        android:id="@+id/balance_textView"
-        android:layout_width="match_parent"
-            android:layout_marginLeft="@dimen/_50sdp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:drawableLeft="@drawable/ic_baseline_account_balance_wallet_24"
-        android:textAlignment="center"
-        android:layout_weight="1"
-        android:text="TextView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.461"
-        app:layout_constraintStart_toStartOf="parent" />
+            android:id="@+id/balance_textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="45dp"
+            android:layout_marginRight="45dp"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/ic_baseline_account_balance_wallet_24"
+            android:fontFamily="@font/montserrat"
+            android:text="TextView"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.461"
+            app:layout_constraintStart_toStartOf="parent" />
     </LinearLayout>
 
     <LinearLayout
@@ -91,13 +96,16 @@
         <TextView
             android:id="@+id/account_textView"
             android:layout_width="match_parent"
-            android:layout_marginLeft="@dimen/_50sdp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
+            android:layout_marginLeft="45dp"
+            android:layout_marginRight="45dp"
             android:layout_weight="1"
+            android:drawableLeft="@drawable/ic_baseline_account_balance_24"
+            android:fontFamily="@font/montserrat"
             android:text="ACCOUNT NUMBER"
             android:textAlignment="center"
-            android:drawableLeft="@drawable/ic_baseline_account_balance_24"
+            android:textColor="#2196F3"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.461"
             app:layout_constraintStart_toStartOf="parent" />
@@ -113,29 +121,36 @@
         <TextView
             android:id="@+id/phone_textView"
             android:layout_width="match_parent"
-            android:layout_marginLeft="@dimen/_50sdp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
+            android:layout_marginLeft="45dp"
+            android:layout_marginRight="45dp"
             android:layout_weight="1"
             android:drawableLeft="@drawable/ic_baseline_phone_24"
-            android:textAlignment="center"
-            android:text="PHONE NUMBER"
+            android:fontFamily="@font/montserrat"
             android:inputType="number"
+            android:text="PHONE NUMBER"
+            android:textAlignment="center"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.461"
             app:layout_constraintStart_toStartOf="parent" />
     </LinearLayout>
 
     <Button
-        android:layout_marginTop="60dp"
         android:id="@+id/btn_transfer"
-        android:layout_gravity="center"
-        android:gravity="center"
-        android:backgroundTint="@color/button_background_color"
-        android:textColor="@color/button_text_color"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/mybutton"
+        android:backgroundTint="@color/green"
+        android:elevation="12dp"
+        android:fontFamily="@font/montserrat"
+        android:gravity="center"
+        android:lineSpacingExtra="24sp"
         android:text="Transfer Money"
+        android:textColor="@color/green"
+        android:textSize="15sp"
 
         />
 </LinearLayout>
