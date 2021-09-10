@@ -9,7 +9,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BankingApp">
         <activity android:name=".SuccessFullSplash"></activity>
-        <activity android:name=".HomeActivity" />
+        <activity android:name=".HomeActivity" android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity android:name=".TransactionHistory" />
         <activity android:name=".TransactionSuccessFull" />
         <activity android:name=".RecieverList" />
