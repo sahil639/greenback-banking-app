@@ -1,33 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.cardview.widget.CardView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:card_view="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:padding="8dp"
+    android:layout_margin="18dp"
+    android:background="#FFFFFF"
     android:orientation="vertical"
-    card_view:cardUseCompatPadding="true"
-    android:background="#7A7C7C"
-    card_view:cardBackgroundColor="#EDECEC"
-    card_view:cardCornerRadius="8dp"
-    card_view:cardElevation="6dp"
+    android:padding="18dp"
+    card_view:cardBackgroundColor="#FFFFFF"
+    card_view:cardCornerRadius="18dp"
+    card_view:cardElevation="12dp"
+    card_view:cardUseCompatPadding="false"
     card_view:contentPadding="6dp"
-    android:layout_margin="8dp"
 
     >
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:padding="8dp"
-        >
+        android:padding="8dp">
 
         <TextView
             android:id="@+id/fffff"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="NAME        : "
+            android:fontFamily="@font/montserrat"
             android:padding="1dp"
+            android:text="NAME        : "
             android:textStyle="bold"></TextView>
 
         <TextView
@@ -35,16 +34,19 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_toRightOf="@id/fffff"
-            android:padding="1dp"
             android:layout_weight="1"
-            android:text="Reciever_Name"></TextView>
+            android:fontFamily="@font/montserrat"
+            android:padding="1dp"
+            android:text="Reciever_Name"
+            android:textColor="#1B1B1B"></TextView>
 
         <TextView
             android:id="@+id/emmmmm"
             android:layout_width="wrap_content"
-            android:padding="1dp"
             android:layout_height="wrap_content"
             android:layout_below="@id/fffff"
+            android:fontFamily="@font/montserrat"
+            android:padding="1dp"
             android:text="EMAIL ID   : "
             android:textStyle="bold">
 
@@ -53,12 +55,13 @@
         <TextView
             android:id="@+id/receiver_email_id"
             android:layout_width="match_parent"
-            android:padding="1dp"
             android:layout_height="wrap_content"
             android:layout_below="@id/fffff"
             android:layout_toRightOf="@id/emmmmm"
             android:layout_weight="1"
+            android:fontFamily="@font/montserrat"
             android:inputType="textEmailAddress"
+            android:padding="1dp"
             android:text="Email_id" />
 
         <TextView
@@ -66,6 +69,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/emmmmm"
+            android:fontFamily="@font/montserrat"
             android:padding="1dp"
             android:text="BALANCE  : "
             android:textStyle="bold">
@@ -76,14 +80,14 @@
             android:id="@+id/receiver_balance"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:typeface="monospace"
-            android:padding="1dp"
             android:layout_below="@+id/receiver_email_id"
             android:layout_toRightOf="@+id/rwwwww"
+            android:fontFamily="@font/montserrat"
             android:inputType="number"
+            android:padding="1dp"
             android:text="Balance"
-            android:textColor="#048AD3"
-             />
+            android:textColor="#2196F3"
+            android:typeface="monospace" />
     </RelativeLayout>
 
 </androidx.cardview.widget.CardView>

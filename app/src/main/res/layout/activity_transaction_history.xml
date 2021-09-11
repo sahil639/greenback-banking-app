@@ -11,12 +11,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/_13sdp"
+        android:fontFamily="@font/montserrat"
         android:gravity="center"
         android:padding="1dp"
         android:text="Recent Transaction"
         android:textAllCaps="true"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        android:textColor="#11209F"
+        android:textColor="#1B7C1F"
         android:textStyle="bold"
         android:typeface="normal" />
 

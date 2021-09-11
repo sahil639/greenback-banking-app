@@ -6,18 +6,21 @@
     android:background="@color/white"
     android:layout_height="match_parent"
     tools:context=".RecieverList">
+
     <TextView
+        android:id="@+id/kkkk"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="PLEASE SELECT ACCOUNT YOU WANT TO SEND MONEY"
-        android:textAlignment="center"
-        android:textSize="@dimen/_11sdp"
         android:layout_marginTop="@dimen/_13sdp"
-        android:typeface="monospace"
+        android:fontFamily="@font/montserrat"
+        android:text="SELECT THE ACCOUNT \nYOU WANT TO SEND MONEY TO"
+        android:textAlignment="center"
+        android:padding="5dp"
         android:textColor="#11209F"
-        android:id="@+id/kkkk"
+        android:textSize="@dimen/_10sdp"
 
-        />
+        android:typeface="monospace" />
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/reciever_list_view"
         android:layout_below="@+id/kkkk"

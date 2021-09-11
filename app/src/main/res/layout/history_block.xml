@@ -11,91 +11,106 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="top"
-        card_view:cardUseCompatPadding="true"
-        app:cardCornerRadius="8dp"
-        card_view:cardElevation="6dp"
-        android:layout_margin="8dp">
+        card_view:cardUseCompatPadding="false"
+        app:cardCornerRadius="18dp"
+        card_view:cardElevation="12dp"
+        android:layout_margin="18dp">
         <RelativeLayout
             android:layout_width="match_parent"
-            android:padding="8dp"
+            android:padding="12dp"
             android:layout_height="match_parent">
-           <TextView
-               android:layout_width="wrap_content"
-               android:layout_height="wrap_content"
-               android:text="SENDER'S NAME    : "
-               android:textStyle="bold"
-               android:typeface="monospace"
-               android:padding="1dp"
-               android:id="@+id/lll"
-               />
+
+            <TextView
+                android:id="@+id/lll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat"
+                android:padding="1dp"
+                android:text="SENDER'S NAME    : "
+                android:textStyle="bold"
+                android:typeface="monospace" />
+
             <TextView
                 android:id="@+id/Transaction_history_name"
                 android:layout_width="wrap_content"
-                android:padding="1dp"
                 android:layout_height="wrap_content"
                 android:layout_toRightOf="@+id/lll"
                 android:layout_weight="1"
+                android:fontFamily="@font/montserrat"
+                android:padding="1dp"
                 android:text="Sender's Name"
-                />
+                android:textColor="#1B1B1B" />
+
             <TextView
+                android:id="@+id/rrr"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_below="@+id/lll"
+                android:fontFamily="@font/montserrat"
                 android:padding="1dp"
                 android:text="RECEIVER'S NAME : "
-                android:typeface="monospace"
-                android:layout_below="@+id/lll"
                 android:textStyle="bold"
-                android:id="@+id/rrr"
-                />
+                android:typeface="monospace" />
+
             <TextView
                 android:id="@+id/Transaction_history_name_receiver"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:padding="1dp"
                 android:layout_below="@+id/Transaction_history_name"
                 android:layout_toRightOf="@+id/rrr"
                 android:layout_weight="1"
-                android:text="Receiver's Name" />
+                android:fontFamily="@font/montserrat"
+                android:padding="1dp"
+                android:text="Receiver's Name"
+                android:textColor="#2196F3" />
+
             <TextView
+                android:id="@+id/ssss"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textStyle="bold"
-                android:typeface="monospace"
-                android:padding="1dp"
-                android:id="@+id/ssss"
-                android:text="TRANSFER AMOUNT: "
                 android:layout_below="@id/rrr"
-                ></TextView>
+                android:fontFamily="@font/montserrat"
+                android:padding="1dp"
+                android:text="TRANSFER AMOUNT: "
+                android:textStyle="bold"
+                android:typeface="monospace"></TextView>
+
             <TextView
                 android:id="@+id/Amount_Number"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="00000"
-                android:padding="1dp"
                 android:layout_below="@+id/rrr"
                 android:layout_toRightOf="@+id/ssss"
                 android:layout_weight="1"
+                android:clickable="false"
+                android:fontFamily="@font/montserrat"
                 android:inputType="number"
-                android:clickable="false"/>
+                android:padding="1dp"
+                android:text="00000"
+                android:textColor="#002C02" />
+
             <TextView
+                android:id="@+id/yyyy"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/yyyy"
+                android:layout_below="@id/ssss"
+                android:fontFamily="@font/montserrat"
                 android:padding="1dp"
-                android:typeface="monospace"
                 android:text="STATUS : "
                 android:textStyle="bold"
-                android:layout_below="@id/ssss"></TextView>
+                android:typeface="monospace"></TextView>
+
             <TextView
                 android:id="@+id/transaction_status"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:padding="1dp"
-                android:layout_weight="1"
-                android:text="Transaction_Status"
                 android:layout_below="@id/ssss"
                 android:layout_toRightOf="@id/yyyy"
-                android:textColor="#00FF0A"
+                android:layout_weight="1"
+                android:fontFamily="@font/montserrat"
+                android:padding="1dp"
+                android:text="Transaction_Status"
+                android:textColor="#8BC34A"
                 android:typeface="monospace" />
 
         </RelativeLayout>

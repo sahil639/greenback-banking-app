@@ -9,13 +9,13 @@
     tools:context=".Detail">
 
     <com.airbnb.lottie.LottieAnimationView
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/_150sdp"
-        android:layout_marginTop="@dimen/_25sdp"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
         android:layout_gravity="center_horizontal"
-        app:lottie_rawRes="@raw/lfeditorontwnekkkk"
+        android:layout_marginTop="@dimen/_25sdp"
         app:lottie_autoPlay="true"
-        app:lottie_loop="true">
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/user">
 
     </com.airbnb.lottie.LottieAnimationView>
 
@@ -138,8 +138,8 @@
 
     <Button
         android:id="@+id/btn_transfer"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="178dp"
+        android:layout_height="55dp"
         android:layout_gravity="center"
         android:layout_marginTop="60dp"
         android:background="@drawable/mybutton"
@@ -149,7 +149,7 @@
         android:gravity="center"
         android:lineSpacingExtra="24sp"
         android:text="Transfer Money"
-        android:textColor="@color/green"
+        android:textColor="@color/white"
         android:textSize="15sp"
 
         />
