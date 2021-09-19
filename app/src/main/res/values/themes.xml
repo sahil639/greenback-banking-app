@@ -1,6 +1,7 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
     <style name="Theme.BankingApp" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:forceDarkAllowed">false</item>
         <!-- Primary brand color. -->
         <item name="colorPrimary">#FFFFFF</item>
         <item name="colorPrimaryVariant">#CADAD6</item>

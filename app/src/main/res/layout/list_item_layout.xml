@@ -29,7 +29,7 @@
             android:fontFamily="@font/montserrat"
             android:padding="1dp"
             android:text="NAME  : "
-            android:textStyle="bold"></TextView>
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/txtTitle"
@@ -40,7 +40,7 @@
             android:layout_weight="1"
             android:fontFamily="@font/montserrat"
             android:padding="1dp"
-            android:text="Name"></TextView>
+            android:text="Name" />
 
         <TextView
             android:id="@+id/pppp"
@@ -52,7 +52,7 @@
             android:fontFamily="@font/montserrat"
             android:padding="1dp"
             android:text="EMAIL ID : "
-            android:textStyle="bold"></TextView>
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/email_sender"
@@ -65,7 +65,7 @@
             android:fontFamily="@font/montserrat"
             android:inputType="textEmailAddress"
             android:padding="1dp"
-            android:text="Email ID"></TextView>
+            android:text="Email ID" />
 
         <TextView
             android:id="@+id/bbbb"
@@ -77,7 +77,7 @@
             android:fontFamily="@font/montserrat"
             android:padding="1dp"
             android:text="BALANCE : "
-            android:textStyle="bold"></TextView>
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/balance_sender"
@@ -92,7 +92,7 @@
             android:padding="1dp"
             android:text="0000"
             android:textColor="#0C7BB6"
-            android:typeface="monospace"></TextView>
+            android:typeface="monospace" />
 
     </RelativeLayout>
 

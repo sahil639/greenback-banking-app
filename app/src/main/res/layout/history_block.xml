@@ -73,7 +73,7 @@
                 android:padding="1dp"
                 android:text="TRANSFER AMOUNT: "
                 android:textStyle="bold"
-                android:typeface="monospace"></TextView>
+                android:typeface="monospace" />
 
             <TextView
                 android:id="@+id/Amount_Number"
@@ -98,7 +98,7 @@
                 android:padding="1dp"
                 android:text="STATUS : "
                 android:textStyle="bold"
-                android:typeface="monospace"></TextView>
+                android:typeface="monospace" />
 
             <TextView
                 android:id="@+id/transaction_status"
